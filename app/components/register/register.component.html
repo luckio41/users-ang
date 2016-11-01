@@ -1,0 +1,15 @@
+<form class="navbar-form navbar-left" (ngSubmit)="registrarForm(userGroup.form)" [formGroup]="userGroup" >
+    <div class="form-group">
+        <label for="nombre">Nombre: </label>
+        <input id="nombre" type="text" class="form-control"  formControlName="nombre"  required>
+    </div>
+    <div class="form-group">
+        <label for="pass">Contraseña: </label>
+        <input id="pass" type="password" class="form-control" formControlName="pass" placeholder="">
+    </div>
+        <div class="form-group">
+        <label for="rPass">Repita contraseña: </label>
+        <input id="rPass" type="password" class="form-control" formControlName="rpass" placeholder="">
+    </div>
+    <button type="submit" class="btn btn-default">Registrar</button>
+</form>
